@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fnt-body);
+}
+
+/* Creating variables */
+:root {
+    /* For typography */
+    --fnt-heading: "Playwrite AU TAS", cursive;
+    --fnt-body: "Poppins", sans-serif;
+    --fs-heading: 34px;
+    --fs-body: 16px;
+    --fw-thick: 600;
+    --fw-light: 300;
+
+    /* Colours */
+    --cl-primary: #57a0f2;
+    --cl-secondary: #6382eb;
+    --error: #f24646;
+    --white: #ffffff;
+    --black: #111111;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, var(--cl-primary), var(--cl-secondary));
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    margin: 50px auto;
+    width: 70%;
+    padding: 20px;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.content {
+    width: 40%;
+    border-right: 5px solid var(--cl-secondary);
+}
+
+#signup-form {
+    display: grid;
+    gap: 10px;
+}
+.form_img{
+    width: 150px;
+}
+.form__heading {
+    font-family: var(--fnt-heading);
+    font-size: var(--fs-heading);
+    padding: 10px 0px;
+}
+
+.form__heading::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: var(--cl-primary);
+}
+.form__label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form__input {
+    padding-block: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cl-primary);
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.form__error {
+    color: var(--error);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.form__btn {
+    background-color: var(--cl-secondary);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    
+}
